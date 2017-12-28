@@ -20,4 +20,5 @@ class DataBase:
     def test_func2(self):
         """documentation function"""
         self.value = 55
+        self.value = 557
         print("sdsdsdsdsd")
