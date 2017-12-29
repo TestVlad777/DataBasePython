@@ -1,0 +1,35 @@
+
+
+
+AddLocationForm:  # root widget теперь пользовательский виджет, он не имеет блока с отступом ниже, значит у него нет дочерних виджетов и свойств
+
+ 
+
+<AddLocationForm@BoxLayout>:  # определяем новый пользовательский класс, @ - означает, что он расширяется (динамически) от BoxLayout; < > - означает, что это новый класс (правило), а не root widget.
+
+    orientation: 'vertical'  # устанавливаем свойство, теперь дочерние виджеты (в нашем случае BoxLayout и ListView) располагаются друг под другом
+
+    BoxLayout:
+
+        TextInput:
+
+        Button:
+
+            text: 'Search'
+
+        Button:
+
+            text: 'Current Location'
+
+    ListView:
+
+        item_string: ['Palo Alto, MX', 'Palo Alto, US']  # пока просто пример как выглядит ListView
+
+
+
+
+
+
+
+
+
